@@ -1,0 +1,109 @@
+header {
+  padding: 0 29px 0 24px;
+  margin-bottom: 25px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 2px #38414a26;
+}
+header .search-box {
+  padding: 16px 0;
+}
+header .search-box img.search-pages {
+  transform: rotate(180deg);
+}
+
+header .search-box .search-holder {
+  padding: 10px 12px;
+  width: 247px;
+  background: #f3f3f9 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+}
+header .search-box input[type="search"] {
+  background-color: transparent;
+  border: none;
+  padding-left: 10px;
+  color: #212529;
+  font-size: 13px;
+}
+header .search-box input[type="search"]::placeholder {
+  color: #878a99;
+}
+header .search-box input[type="search"]:focus {
+  outline: none;
+  border: none;
+}
+
+header .settings-container {
+  gap: 28px;
+}
+
+header .settings-container .notification {
+  position: relative;
+}
+header .settings-container img {
+  cursor: pointer;
+}
+header .settings-container span {
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+  background: #00a159 0% 0% no-repeat padding-box;
+  display: flex;
+  line-height: 19px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: -6px;
+  right: -16px;
+}
+header .settings-container .flag {
+  width: 20px;
+  height: 20px;
+}
+header .user {
+  margin-right: 17px;
+  width: 154px;
+  height: 70px;
+  background: #f3f3f9 0% 0% no-repeat padding-box;
+  padding: 0 18px;
+  gap: 8px;
+  cursor: pointer;
+}
+header .user img {
+  width: 32px;
+  height: 32px;
+}
+header .user .user-info h3 {
+  font-size: 13px;
+  color: #495057;
+  margin-bottom: 0;
+}
+header .user .user-info span {
+  display: inline-block;
+  font-size: 12px;
+  color: #495057;
+  margin-bottom: 0;
+}
+header .offers-header {
+  font-size: 15px;
+  color: #495057;
+}
+header .link-container {
+  height: 40px;
+}
+header .links img {
+  padding: 0 10px;
+  transform: rotate(180deg);
+}
+header .links a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #495057;
+}
+header .links a.active {
+  text-decoration: none;
+  font-size: 13px;
+  color: #9599ad;
+}

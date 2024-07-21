@@ -1,0 +1,106 @@
+<main class="bg-white">
+  <div [class.show]="show" class="delete-container position-absolute">
+    <div class="delete-modal">
+      <img src="/icons/delete-circle.svg" alt="delete icon" />
+      <h2 class="fs-arabic-bold">هل انت متأكد من حذف العرض</h2>
+      <div class="d-flex align-items-center justify-content-center gap-3">
+        <button (click)="deleteOffer()" class="verify-delete fs-arabic-regular">
+          تأكيد
+        </button>
+        <button
+          (click)="hideDeleteModal()"
+          class="cancel-delete fs-arabic-bold fs-arabic-regular"
+        >
+          الغاء
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="offers-header-container">
+    <div class="offers-header d-flex justify-content-between">
+      <h2 class="fs-arabic-bold m-0">إدارة العروض</h2>
+      <div class="d-flex align-items-center">
+        <button
+          class="show-offers d-flex justify-content-center align-items-center fs-arabic-regular"
+        >
+          عرض الطلبات
+        </button>
+        <button
+          class="add-offer d-flex justify-content-center align-items-center fs-arabic-regular"
+        >
+          <img src="/icons/plus.svg" alt="add offer icon" />إضافة عرض
+        </button>
+      </div>
+    </div>
+    <div
+      class="offers-settings d-flex align-items-center justify-content-between"
+    >
+      <div class="search-offer position-relative flex-grow-1 gap">
+        <input
+          class="w-100 fs-arabic-regular"
+          placeholder="ابحث عن طريق نوع الجهة ورقم السجل التجاري واسم الجهة ومجال الخدمة"
+          type="search"
+          name="searchOffer"
+        />
+        <img class="position-absolute" src="/icons/search-offer.svg" alt="" />
+      </div>
+      <div class="d-flex">
+        <button
+          class="pdf-filter d-flex justify-content-center align-items-center"
+        >
+          <img src="/icons/pdf.svg" alt="pdf icon" />
+        </button>
+        <button
+          class="xls-filter d-flex justify-content-center align-items-center"
+        >
+          <img src="/icons/xls.svg" alt="xls icon" />
+        </button>
+        <button class="filter d-flex justify-content-center align-items-center">
+          <img src="/icons/filter.svg" alt="filter icon" />
+        </button>
+      </div>
+    </div>
+    <div class="table-responsive offers-table">
+      <table class="table">
+        <thead>
+          <tr>
+            <th><input type="checkbox" /></th>
+            <th class="fs-arabic-bold">عنوان العرض</th>
+            <th class="fs-arabic-bold">رقم السجل التجاري</th>
+            <th class="fs-arabic-bold">تاريخ انتهاء العرض</th>
+            <th class="fs-arabic-bold">اسم الجهة</th>
+            <th class="fs-arabic-bold">الحالة</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let offer of offers; let i = index">
+            <td><input type="checkbox" /></td>
+            <td class="fs-arabic-regular">{{ offer.title }}</td>
+            <td class="fs-arabic-regular">{{ offer.regNumber }}</td>
+            <td class="fs-arabic-regular">{{ offer.endDate }}</td>
+            <td class="fs-arabic-regular">{{ offer.entityName }}</td>
+            <td class="status-buttons bg-transparent">
+              <div class="d-flex gap-3 align-items-center">
+                <a routerLink="/view-offer" ariaCurrentWhenActive="page">
+                  <img src="/icons/view.svg" alt="view icon" />
+                </a>
+                <button>
+                  <img src="/icons/edit.svg" alt="edit icon" />
+                </button>
+                <button (click)="showDeleteModal(i)">
+                  <img src="/icons/delete.svg" alt="delete icon" />
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="pagination-holder d-flex justify-content-end gap-4 w-100">
+        <button class="pagination-prev fs-arabic-regular">السابق</button>
+        <a class="active fs-arabic-regular pt-1" href="">1</a>
+        <a href=" fs-arabic-regular">2</a>
+        <button class="pagination-next fs-arabic-regular">التالي</button>
+      </div>
+    </div>
+  </div>
+</main>

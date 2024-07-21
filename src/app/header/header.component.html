@@ -1,0 +1,56 @@
+<header>
+  <div class="d-flex justify-content-between align-items-center">
+    <div class="search-box d-flex align-items-center gap-3">
+      <img
+        class="search-pages"
+        src="/icons/search-page.svg"
+        alt="search pages icon"
+      />
+      <div class="search-holder d-flex align-items-center">
+        <input
+          class="w-100 fs-arabic-regular"
+          placeholder="بحث..."
+          type="search"
+        />
+        <img src="/icons/search-offer.svg" alt="search icon" />
+      </div>
+    </div>
+    <div class="d-flex align-items-center">
+      <div class="settings-container d-flex align-items-center">
+        <div class="position-relative flex align-items-center">
+          <img
+            src="/icons/notification.svg"
+            alt="notification icon"
+            class="notification"
+          />
+          <span class="inter-medium">3</span>
+        </div>
+        <img src="/icons/dark.svg" alt="dark icon" />
+        <img src="/icons/flag.png" alt="flag icon" class="flag" />
+      </div>
+      <div class="user d-flex align-items-center">
+        <img src="/icons/user.png" alt="user icon" />
+        <div class="user-info">
+          <h3 class="fs-arabic-regular">حمد الشهراني</h3>
+          <span class="fs-arabic-regular">مدير تنفيذي</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-between align-items-center link-container">
+    <h2 class="offers-header mb-0 fs-arabic-bold">{{ currentPath }}</h2>
+
+    <div class="flex align-items-center links">
+      <a class="fs-arabic-regular" routerLink="/" ariaCurrentWhenActive="page"
+        >الرئيسية</a
+      >
+      <img src="/icons/path-arrow.svg" alt="path icon" />
+      <a
+        routerLink="/offers-management"
+        class="active fs-arabic-regular"
+        ariaCurrentWhenActive="page"
+        >إدارة العروض</a
+      >
+    </div>
+  </div>
+</header>
