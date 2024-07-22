@@ -1,6 +1,7 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+
 @Component({
   selector: 'app-offers-management',
   standalone: true,

@@ -1,0 +1,88 @@
+main {
+  margin: 0 24px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 2px #38414a26;
+  border-radius: 4px;
+  padding: 16px 0 24px;
+}
+.section-header {
+  padding: 0 17px 14px 0 ;
+  font-size: 16px;
+  line-height: 37px;
+  border-bottom: 1px dashed #e9ebec;
+  color: #495057;
+  margin-bottom: 0;
+}
+main .form-container {
+  padding: 33px 17px 0 ;
+}
+main .form-container .form-label {
+  font-size: 13px;
+  color: #212529;
+}
+.location-btn {
+  width: 50%;
+  height: 39px;
+  font-size: 14px;
+}
+.branch-btn,
+.delete-btn {
+  height: 39px;
+  font-size: 14px;
+  width: -webkit-fill-available;
+}
+
+.add-partner-btn {
+  width: 200px;
+  border-color: #198754;
+  background-color: white;
+  color: #198754;
+}
+.cancel-btn {
+  width: 60px;
+  background-color: #f4f8ff;
+  color: black;
+}
+.hide {
+  display: none;
+}
+.remove {
+  background-color: crimson;
+  color: white;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(128, 128, 128, 0.936);
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type="radio"] {
+  border-radius: 50%;
+}
+
+input[type="checkbox"]::before,
+input[type="radio"]::before {
+  content: "";
+  width: 10px;
+  border-radius: 2px;
+  height: 10px;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #5ccc5b;
+}
+input[type="radio"]::before {
+  border-radius: 4px;
+  width: 9px;
+  height: 9px;
+}
+input[type="checkbox"]:checked::before,
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}

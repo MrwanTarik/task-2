@@ -15,4 +15,5 @@ export const routes: Routes = [
   // },
   { path: 'offers-management', component: OffersManagementComponent },
   { path: 'view-offer', component: ViewOfferComponent },
+  { path: 'add-offer', component: AddOfferComponent },
 ];
