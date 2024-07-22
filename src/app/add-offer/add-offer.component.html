@@ -2,266 +2,357 @@
   <form action="">
     <section id="partnerDetails">
       <h2 class="section-header fs-arabic-bold">إضافة عرض</h2>
-      <div class="row align-items-end g-2 form-container">
+      <div class="row align-items-center g-2 form-container">
         <div class="col-4 d-flex flex-column">
-          <label class="mb-2 fs-arabic-regular">اسم الشريك </label>
-          <select class="p-2 rounded text-secondary border">
-            <option selected value="">اسم الشريك</option>
-            <option value="governmental">حكوميه</option>
-          </select>
-        </div>
-        <div class="col-3 d-flex flex-column">
-          <label for="arabicDepartmentName" class="mb-2">اسم الجهه عربى</label>
-          <input
-            type="text"
-            class="p-2 rounded text-secondary border"
-            id="arabicDepartmentName"
-            placeholder="اسم الجهه"
-          />
-        </div>
-        <div class="col-3 d-flex flex-column">
-          <label class="mb-2">اسم الجهه انجليزى</label>
-          <input
-            type="text"
-            class="p-2 rounded text-secondary border"
-            placeholder="اسم الجهه"
-            id="englishDepartmentName"
-          />
-        </div>
-        <div class="col-3 d-flex flex-column">
-          <label class="mb-2">مجال الجهة</label>
-          <select class="p-2 rounded text-secondary border" id="serviceType">
-            <option selected value="">حدد مجال الصناعه</option>
+          <label class="fs-arabic-regular form-label mb-0">اسم الشريك </label>
+          <select class="p-2 form-select">
+            <option disabled selected value="">اسم الشريك</option>
             <option value="governmental">حكوميه</option>
           </select>
         </div>
         <div class="col-4 d-flex flex-column">
-          <label class="mb-2">مجال الجهة</label>
-          <div class="d-flex gap-3 mt-4">
-            <div class="d-flex gap-2 align-items-center">
-              <input
-                class="mt-1"
-                id="commerceApp"
-                name="firstDepartment"
-                type="checkbox"
-                value="commerceApp"
-              />
-              <label for="commerceApp">متجر تطبيق الكترونى</label>
-            </div>
-            <div class="d-flex gap-2 align-items-center">
-              <input
-                class="mt-1"
-                name="secondDepartment"
-                id="commercialBranch"
-                type="checkbox"
-                value="commercialBranch"
-              />
-              <label for="commercialBranch"> فرع تجارى</label>
-            </div>
-          </div>
-        </div>
-        <div class="col-4 d-flex flex-column">
-          <label for="commercialRegistrationNumber" class="mb-2"
-            >رقم السجل التجارى</label
-          >
-          <input
-            type="text"
-            class="p-2 rounded text-secondary border"
-            id="commercialRegistrationNumber"
-            placeholder="رقم السجل التجارى"
-          />
-        </div>
-        <div class="col-4 d-flex flex-column">
-          <label for="aboutThePartner" class="mb-2">نبذه عن الشريك</label>
-          <input
-            type="text"
-            class="p-2 rounded text-secondary border"
-            id="aboutThePartner"
-            placeholder="نبذه عن الشريك"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="partnerRepresentativeDetails">
-      <h2 class="section-header text-dark pt-2 pb-3 border-bottom px-2">
-        بيانات ممثل الشريك
-      </h2>
-      <div class="row my-4 px-4 border-bottom pb-4">
-        <div class="col-md-4 mb-3">
           <label
-            for="partnerRepresentativeDetails"
-            class="form-label text-dark"
-          >
-            اسم ممثل الشريك
-          </label>
-          <input
-            type="text"
-            class="form-control text-secondary"
-            id="partnerRepresentativeDetails"
-            placeholder="اسم ممثل الشريك"
-          />
-        </div>
-        <div class="col-md-4 mb-3">
-          <label for="phoneNumber" class="form-label text-dark">
-            رقم الجوال
+            for="arabicDepartmentName"
+            class="fs-arabic-regular form-label mb-0"
+            >السجل التجاري
           </label>
           <input
             type="number"
-            class="form-control text-secondary"
-            id="phoneNumber"
-            placeholder=" رقم الجوال "
+            class="p-2 form-control"
+            id="arabicDepartmentName"
+            placeholder="123246463356"
           />
-        </div>
-        <div class="col-md-4 mb-3">
-          <label for="emailAdress" class="form-label text-dark">
-            البريد الالكترونى
-          </label>
-          <input
-            type="email"
-            class="form-control text-secondary"
-            id="emailAdress"
-            placeholder=" البريد الالكترونى  "
-          />
-        </div>
-      </div>
-    </section>
-
-    <section id="branchDetails">
-      <h2 class="section-header text-black pb-3 border-bottom px-4">
-        اضف بيانات الفرع
-      </h2>
-      <div class="row g-2 my-4 px-4 border-bottom pb-4 align-items-end">
-        <div class="col-3 d-flex flex-column">
-          <label class="text-black mb-2 form-label">المنطقة</label>
-          <select class="form-control rounded text-secondary" title="region">
-            <option selected value="">حدد المنطقة</option>
-            <option value="governmental">حكوميه</option>
-          </select>
-        </div>
-        <div class="col-3 d-flex flex-column">
-          <label class="text-black mb-2 form-label">المدينه</label>
-          <select class="form-control rounded text-secondary" title="state">
-            <option selected value="">حدد المدينه</option>
-            <option value="governmental">حكوميه</option>
-          </select>
         </div>
         <div class="col-4 d-flex flex-column">
-          <label for="branchLocation" class="text-black mb-2 form-label">
-            موقع الفرع
-          </label>
-          <div class="d-flex border rounded">
-            <input
-              type="text"
-              class="form-control rounded text-secondary border-0"
-              id="branchLocation"
-              placeholder="موقع الفرع/فروع"
-            />
-            <button class="btn btn-success location-btn rounded-start-0">
-              حدد الموقع
-            </button>
-          </div>
+          <label class="fs-arabic-regular form-label mb-0">مجال الخدمة</label>
+          <input
+            type="text"
+            class="p-2 form-control"
+            placeholder="مجال الخدمة"
+            id="englishDepartmentName"
+          />
         </div>
-        <div class="col-2 d-flex align-items-end gap-2 h-100">
-          <button class="btn btn-secondary branch-btn">اضف فرع اخر</button>
-          <button class="btn btn-secondary delete-btn">حذف</button>
-        </div>
-      </div>
-    </section>
-
-    <section id="commerceDetails">
-      <h2 class="section-header text-18 text-black pb-3 border-bottom px-4">
-        بيانات المتجر / المتجر الالكترونى
-      </h2>
-      <div class="row my-4 px-4 pb-4">
-        <div class="col-md-4 mb-3">
-          <label
-            for="storeDownloadLink"
-            class="form-label text-16 text-black mb-2"
-          >
-            رابط المتجر/ رابط تحميل التطبيق
+        <div class="col-4 d-flex flex-column">
+          <label class="fs-arabic-regular form-label mb-0"
+            >عنوان العرض باللغة العربية
           </label>
           <input
             type="text"
-            class="form-control p-2 rounded-md text-gray-400"
-            id="storeDownloadLink"
-            placeholder="رابط المتجر/ رابط تحميل التطبيق"
+            class="p-2 form-control"
+            placeholder="عنوان العرض "
+            id="englishDepartmentName"
           />
         </div>
-        <div class="col-md-4 mb-3">
-          <label for="region" class="form-label text-16 text-black mb-2"
-            >المنطقة</label
+        <div class="col-4 d-flex flex-column">
+          <label class="fs-arabic-regular form-label mb-0">
+            عنوان العرض باللغة الانجليزية</label
           >
-          <select class="form-select p-2 rounded-md text-gray-400" id="region">
-            <option selected value="">اضافة المنطقة</option>
+          <select class="form-select p-2" id="serviceType">
+            <option selected value="">عنوان العرض</option>
             <option value="governmental">حكوميه</option>
           </select>
         </div>
-        <div class="col-md-4 mb-3">
-          <label for="city" class="form-label text-16 text-black mb-2"
-            >المدينه</label
-          >
-          <select class="form-select p-2 rounded-md text-gray-400" id="city">
-            <option selected value="">اضافة المدينه</option>
-            <option value="governmental">حكوميه</option>
-          </select>
-        </div>
-        <div class="col-md-4 mb-3">
-          <label for="partnerSlogan" class="form-label text-16 text-black mb-2">
-            شعار الشريك
-          </label>
-          <input
-            type="file"
-            class="form-control p-2 rounded-md text-gray-400"
-            id="partnerSlogan"
-          />
-        </div>
-        <div class="col-md-4 mb-3">
-          <label for="partnerReport" class="form-label text-16 text-black mb-2">
-            خطاب الشريك
-          </label>
-          <input
-            type="file"
-            class="form-control p-2 rounded-md text-gray-400"
-            id="partnerReport"
-            placeholder="ارفق النموذج بامتداد PDF"
-          />
-        </div>
-        <div class="col-md-4 mb-3">
-          <label class="form-label text-16 text-black mb-2">حال الشريك</label>
-          <div class="d-flex align-items-center mt-2">
-            <div class="form-check me-3 d-flex align-items-end gap-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="partnerActivation"
-                id="partnerActivated"
-                value="activated"
-              />
-              <label class="form-check-label" for="partnerActivated"
-                >مفعل</label
-              >
+        <div class="row second-row">
+          <div class="col-3">
+            <label class="fs-arabic-regular form-label mb-0">حال الشريك</label>
+            <div class="d-flex align-items-center mt-1 gap-3">
+              <div class="form-check me-3 d-flex align-items-center gap-2">
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="partnerActivation"
+                    id="partnerActivated"
+                    value="activated"
+                  />
+                </div>
+                <label
+                  class="fs-arabic-regular form-label mb-0"
+                  for="partnerActivated"
+                  >مفعل</label
+                >
+              </div>
+              <div class="form-check d-flex align-items-center gap-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="partnerActivation"
+                  id="partnerNonActivated"
+                  value="nonActivate"
+                />
+                <label
+                  class="fs-arabic-regular form-label mb-0"
+                  for="partnerNonActivated"
+                  >معطل</label
+                >
+              </div>
             </div>
-            <div class="form-check d-flex align-items-end gap-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="partnerActivation"
-                id="partnerNonActivated"
-                value="nonActivate"
-              />
-              <label class="form-check-label" for="partnerNonActivated"
-                >معطل</label
-              >
+          </div>
+          <div class="col-3">
+            <label class="fs-arabic-regular form-label mb-0"
+              >إخفاء العرض
+            </label>
+            <div class="d-flex align-items-center mt-1 gap-3">
+              <div class="form-check me-3 d-flex align-items-center gap-2">
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="partnerActivation"
+                    id="activateHideOffer"
+                    value="activated"
+                  />
+                </div>
+                <label
+                  class="fs-arabic-regular form-label mb-0"
+                  for="activateHideOffer"
+                  >نعم</label
+                >
+              </div>
+              <div class="form-check d-flex align-items-center gap-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="partnerActivation"
+                  id="nonActivateHideOffer"
+                  value="nonActivate"
+                />
+                <label
+                  class="fs-arabic-regular form-label mb-0"
+                  for="nonActivateHideOffer"
+                  >لا</label
+                >
+              </div>
             </div>
+          </div>
+          <div class="col-3">
+            <label class="fs-arabic-regular form-label mb-0"> عرض موسمي </label>
+            <div class="d-flex align-items-center mt-1 gap-3">
+              <div class="form-check me-3 d-flex align-items-center gap-2">
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="partnerActivation"
+                    id="activateSeasonalOffer"
+                    value="activated"
+                  />
+                </div>
+                <label
+                  class="fs-arabic-regular form-label mb-0"
+                  for="activateSeasonalOffer"
+                  >نعم</label
+                >
+              </div>
+              <div class="form-check d-flex align-items-center gap-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="partnerActivation"
+                  id="nonActivateSeasonalOffer"
+                  value="nonActivate"
+                />
+                <label
+                  class="fs-arabic-regular form-label mb-0"
+                  for="nonActivateSeasonalOffer"
+                  >لا</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <label class="fs-arabic-regular form-label mb-0"> نوع العرض </label>
+            <div class="d-flex align-items-center mt-1 gap-3">
+              <div class="form-check me-3 d-flex align-items-center gap-2">
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="partnerActivation"
+                    id="limited"
+                    value="activated"
+                  />
+                </div>
+                <label class="fs-arabic-regular form-label mb-0" for="limited"
+                  >محدد المدة</label
+                >
+              </div>
+              <div class="form-check d-flex align-items-center gap-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="partnerActivation"
+                  id="notLimited"
+                  value="nonActivate"
+                />
+                <label
+                  class="fs-arabic-regular form-label mb-0"
+                  for="notLimited"
+                  >مستمر</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-4 d-flex flex-column">
+            <label
+              for="offerSeasonalType"
+              class="fs-arabic-regular form-label mb-0"
+              >نوع العرض الموسمي
+            </label>
+            <input
+              type="text"
+              class="p-2 form-control"
+              id="offerSeasonalType"
+              placeholder="يوم التأسيس"
+            />
+          </div>
+        </div>
+        <div class="row second-row">
+          <div class="col-4">
+            <label
+              for="offerSeasonalType"
+              class="fs-arabic-regular form-label mb-0"
+            >
+              التذكير بالعرض قبل الانتهاء
+            </label>
+            <div class="offer-reminder">
+              <button>
+                <img src="/icons/plus-add0ffer.svg" alt="plus icon" />
+              </button>
+              <span class="fs-arabic-regular mt-1">01</span>
+              <button>
+                <img src="/icons/plus-add0ffer.svg" alt="plus icon" />
+              </button>
+            </div>
+          </div>
+          <div class="col-4 d-flex flex-column">
+            <label class="fs-arabic-regular form-label mb-0"
+              >عدد نقاط العرض
+            </label>
+            <input
+              type="text"
+              class="p-2 form-control"
+              placeholder="ضع العدد هنا "
+              id="englishDepartmentName"
+            />
+          </div>
+        </div>
+        <div class="row second-row">
+          <div class="col-4 d-flex flex-column">
+            <label class="fs-arabic-regular form-label mb-0">
+              تصنيف العرض
+            </label>
+            <select class="p-2 form-select">
+              <option disabled selected value="">حدد التصنيف</option>
+              <option value="governmental">حكوميه</option>
+            </select>
+          </div>
+          <div class="col-4 d-flex flex-column">
+            <label for="startDate" class="fs-arabic-regular form-label mb-0">
+              تاريخ بدء العرض
+            </label>
+            <input
+              type="date"
+              class="p-2 form-control"
+              id="startDate"
+              placeholder="123246463356"
+            />
+          </div>
+          <div class="col-4 d-flex flex-column">
+            <label for="endDate" class="fs-arabic-regular form-label mb-0">
+              تاريخ انتهاء العرض</label
+            >
+            <input
+              type="date"
+              class="p-2 form-control"
+              placeholder="مجال الخدمة"
+              id="endDate"
+            />
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12 d-flex flex-column">
+            <label
+              for="arabic-description"
+              class="fs-arabic-regular form-label mb-0"
+              >نوع العرض الموسمي
+            </label>
+            <textarea class="form-control" name="" id="arabic-description">
+            </textarea>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12 d-flex flex-column">
+            <label
+              for="english-description"
+              class="fs-arabic-regular form-label mb-0"
+            >
+              وصف العرض باللغة الانجليزية
+            </label>
+            <textarea class="form-control" name="" id="english-description">
+            </textarea>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-4 d-flex flex-column">
+            <label for="formFileSm" class="fs-arabic-regular form-label mb-0">
+              صور العرض</label
+            >
+            <input class="form-control" type="file" id="formFile" />
+          </div>
+          <div class="col-4 d-flex flex-column">
+            <label class="fs-arabic-regular form-label mb-0"
+              >اختيار المنطقة
+            </label>
+            <select class="p-2 form-select">
+              <option disabled selected value="">اختيار المنطقة</option>
+              <option value="governmental">حكوميه</option>
+            </select>
+          </div>
+
+          <div class="col-4 d-flex flex-column">
+            <label class="fs-arabic-regular form-label mb-0"
+              >الرابط الالكتروني للشريك
+            </label>
+            <input
+              type="text"
+              class="p-2 form-control"
+              placeholder="الرابط الالكتروني للشريك "
+              id="englishDepartmentName"
+            />
+          </div>
+        </div>
+        <div class="d-flex gap-2 second-row align-items-end">
+          <div class="flex-grow-1 d-flex flex-column">
+            <label class="fs-arabic-regular form-label mb-0">
+              طريقة الاستفادة من العرض
+            </label>
+            <select class="p-2 form-select">
+              <option disabled selected value="">حدد الطريقة</option>
+              <option value="governmental">حكوميه</option>
+            </select>
+          </div>
+          <div class="">
+            <button class="fs-arabic-regular type-btn">
+              تخصيص العرض حسب الفئة
+            </button>
           </div>
         </div>
       </div>
     </section>
-    <div class="d-flex justify-content-between px-4 align-items-center">
-      <button class="btn btn-success add-partner-btn">اضافة شريك اخر</button>
-      <div class="d-flex gap-2 align-items-center">
-        <button class="btn cancel-btn">الغاء</button>
-        <button class="btn btn-success" style="width: 100px">حفظ</button>
+
+    <div
+      class="d-flex justify-content-between px-4 align-items-center submit-container"
+    >
+      <div class="d-flex align-items-center gap-2">
+        <button class="btn check-btn fs-arabic-regular">معاينة</button>
+        <button class="btn add-btn fs-arabic-regular">اضافة عرض اخر</button>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <button class="btn cancel-btn fs-arabic-regular">الغاء</button>
+        <button class="btn save-btn btn-success fs-arabic-regular">حفظ</button>
       </div>
     </div>
   </form>

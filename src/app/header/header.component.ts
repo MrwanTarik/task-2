@@ -26,6 +26,8 @@ export class HeaderComponent {
         this.currentPath = event.url;
         if (event.url === '/view-offer') {
           this.currentPath = 'تفاصيل العرض';
+        } else if (event.url === '/add-offer') {
+          this.currentPath = ' اضافة عرض';
         } else {
           this.currentPath = ' العروض';
         }

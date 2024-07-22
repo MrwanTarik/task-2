@@ -6,7 +6,7 @@ main {
   padding: 16px 0 24px;
 }
 .section-header {
-  padding: 0 17px 14px 0 ;
+  padding: 0 17px 14px 0;
   font-size: 16px;
   line-height: 37px;
   border-bottom: 1px dashed #e9ebec;
@@ -14,60 +14,87 @@ main {
   margin-bottom: 0;
 }
 main .form-container {
-  padding: 33px 17px 0 ;
+  padding: 33px 17px 0;
 }
 main .form-container .form-label {
   font-size: 13px;
   color: #212529;
-}
-.location-btn {
-  width: 50%;
-  height: 39px;
-  font-size: 14px;
-}
-.branch-btn,
-.delete-btn {
-  height: 39px;
-  font-size: 14px;
-  width: -webkit-fill-available;
+  line-height: 30px;
 }
 
-.add-partner-btn {
-  width: 200px;
-  border-color: #198754;
-  background-color: white;
-  color: #198754;
+main .form-container .offer-reminder span {
+  color: #878a99;
+  font-size: 13px;
 }
-.cancel-btn {
-  width: 60px;
-  background-color: #f4f8ff;
-  color: black;
-}
-.hide {
-  display: none;
-}
-.remove {
-  background-color: crimson;
-  color: white;
+main .form-container select,
+main .form-container input[type="number"],
+main .form-container input[type="text"] {
+  color: #878a99;
+  font-size: 13px;
+  height: 38px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  height: 38px;
+  padding-right: 8px;
 }
 
-input[type="checkbox"],
+main .form-container textarea {
+  height: 59px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 13px;
+  color: #878a99;
+  width: 100%;
+  resize: none;
+}
+main .form-container input[type="number"] {
+  direction: rtl;
+}
+
+main .form-container .second-row {
+  margin-top: 30px;
+}
+main .form-container .form-check {
+  padding-right: 0;
+}
+main .form-container .offer-reminder {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  justify-content: space-between;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+main .form-container .offer-reminder button {
+  width: 22px;
+  height: 22px;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  background-color: #00a159;
+}
+
 input[type="radio"] {
   appearance: none;
   background-color: #fff;
   margin: 0;
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(128, 128, 128, 0.936);
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ced4da;
   transform: translateY(-0.075em);
   display: grid;
   place-content: center;
 }
 input[type="radio"] {
   border-radius: 50%;
+  margin-top: 1px;
 }
 
-input[type="checkbox"]::before,
 input[type="radio"]::before {
   content: "";
   width: 10px;
@@ -75,14 +102,68 @@ input[type="radio"]::before {
   height: 10px;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em #5ccc5b;
+  box-shadow: inset 1em 1em #00a159;
 }
 input[type="radio"]::before {
-  border-radius: 4px;
+  border-radius: 6px;
   width: 9px;
   height: 9px;
 }
-input[type="checkbox"]:checked::before,
 input[type="radio"]:checked::before {
   transform: scale(1);
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.type-btn,
+.submit-container button.cancel-btn,
+.submit-container button.save-btn,
+.submit-container button.check-btn,
+.submit-container button.add-btn {
+  height: 38px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  font-size: 13px;
+}
+.type-btn {
+  width: 174px;
+  color: #ffffff;
+  background-color: #29504d;
+}
+.submit-container {
+  margin: 30px 0;
+}
+.submit-container button.cancel-btn {
+  width: 61px;
+  background-color: #f3f6f9;
+  color: black;
+}
+.submit-container button.save-btn {
+  width: 103px;
+  color: #ffffff;
+  background-color: #00a159;
+}
+.submit-container button.check-btn {
+  width: 80px;
+  color: #29504d;
+  border: 1px solid #29504d;
+  background-color: transparent;
+}
+.submit-container button.add-btn {
+  width: 134px;
+  color: #29504d;
+  border: 1px solid #29504d;
+  background-color: transparent;
 }
