@@ -1,0 +1,115 @@
+.offers-header-container .offers-header h2 {
+  color: #495057;
+  font-size: 16px;
+  line-height: 37px;
+}
+.offers-header-container .offers-header {
+  padding: 0 22px 17px;
+  border-bottom: 1px dashed #e9ebec;
+}
+.offers-header-container .filter-container {
+  margin-top: 17px;
+  padding: 17px 22px ;
+  border-top: 1px dashed #e9ebec;
+  background: #FBFBFB 0% 0% no-repeat padding-box;
+}
+
+.offers-header-container .filter-container .filter-element {
+  width: 20%;
+}
+.offers-header-container .filter-container .filter-element .save-btn {
+  width: 122px;
+}
+.offers-header-container .offers-header button.add-offer,
+.offers-header-container .offers-header button.show-offers {
+  min-width: 106px;
+  height: 38px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 13px;
+}
+.offers-header-container .offers-header button.add-offer img {
+  margin-left: 11px;
+}
+.offers-header-container .offers-header button.add-offer {
+  color: white;
+  background-color: #00a159;
+  border: transparent;
+  transition: background-color 0.3s ease;
+}
+.offers-header-container .offers-header button.show-offers {
+  color: #00a159;
+  margin-left: 14px;
+  background-color: transparent;
+  border: 1px solid #00a159;
+}
+.offers-header-container .offers-header button.add-offer:hover {
+  background-color: #00703c;
+}
+
+/* offers settings */
+
+.offers-header-container .offers-settings {
+  padding: 16px 22px 0;
+}
+.offers-header-container .offers-settings .search-offer {
+  margin-left: 12px;
+}
+
+.offers-header-container .offers-settings .pdf-filter,
+.offers-header-container .offers-settings .xls-filter,
+.offers-header-container .offers-settings .filter {
+  min-width: 37px;
+  height: 37px;
+  border-radius: 6px;
+  text-align: center;
+  border: 0;
+  transition: background-color 0.3s ease;
+}
+.offers-header-container .offers-settings .pdf-filter {
+  background-color: #a10000;
+}
+.offers-header-container .offers-settings .pdf-filter:hover {
+  background-color: #b80000;
+}
+
+.offers-header-container .offers-settings .xls-filter {
+  background-color: #00a159;
+  margin: 0 5px;
+}
+.offers-header-container .offers-settings .xls-filter:hover {
+  background-color: #00b369;
+}
+
+.offers-header-container .offers-settings .filter {
+  background-color: #29504d;
+}
+.offers-header-container .offers-settings .filter:hover {
+  background-color: #39605d;
+}
+.offers-header-container .offers-settings .xls-filter img,
+.offers-header-container .offers-settings .pdf-filter img {
+  transform: rotate(180deg);
+}
+.offers-header-container .offers-settings .search-offer img {
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.offers-header-container .offers-settings input[type="search"] {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  height: 37px;
+  padding-right: 42px;
+  color: #212529;
+  font-size: 13px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.offers-header-container .offers-settings input[type="search"]::placeholder {
+  color: #9599ad;
+}
+.offers-header-container .offers-settings input[type="search"]:focus {
+  outline: 0;
+  border-color: #8b98a5;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}

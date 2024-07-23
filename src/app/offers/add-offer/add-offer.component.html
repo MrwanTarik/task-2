@@ -1,0 +1,474 @@
+<main class="bg-white m-3 py-2">
+  <form action="">
+    <section id="partnerDetails">
+      <h2 class="section-header fs-arabic-bold">إضافة عرض</h2>
+      <div class="row align-items-center gx-2 gy-3 form-container">
+        <div class="col-4 d-flex flex-column">
+          <label class="fs-arabic-regular form-label mb-0">اسم الشريك </label>
+          <select class="p-2 form-select">
+            <option disabled selected value="">اسم الشريك</option>
+            <option value="governmental">حكوميه</option>
+          </select>
+        </div>
+        <div class="col-4 d-flex flex-column">
+          <label
+            for="arabicDepartmentName"
+            class="fs-arabic-regular form-label mb-0"
+            >السجل التجاري
+          </label>
+          <input
+            type="number"
+            class="p-2 form-control"
+            id="arabicDepartmentName"
+            placeholder="123246463356"
+          />
+        </div>
+        <div class="col-4 d-flex flex-column">
+          <label class="fs-arabic-regular form-label mb-0">مجال الخدمة</label>
+          <input
+            type="text"
+            class="p-2 form-control"
+            placeholder="مجال الخدمة"
+            id="englishDepartmentName"
+          />
+        </div>
+        <div class="col-4 d-flex flex-column">
+          <label class="fs-arabic-regular form-label mb-0"
+            >عنوان العرض باللغة العربية
+          </label>
+          <input
+            type="text"
+            class="p-2 form-control"
+            placeholder="عنوان العرض "
+            id="englishDepartmentName"
+          />
+        </div>
+        <div class="col-4 d-flex flex-column">
+          <label class="fs-arabic-regular form-label mb-0">
+            عنوان العرض باللغة الانجليزية</label
+          >
+          <select class="form-select p-2" id="serviceType">
+            <option selected value="">عنوان العرض</option>
+            <option value="governmental">حكوميه</option>
+          </select>
+        </div>
+        <div class="col-4 invisible"></div>
+        <div class="col-3">
+          <label class="fs-arabic-regular form-label mb-0">حال الشريك</label>
+          <div class="d-flex align-items-center mt-1 gap-3">
+            <div class="form-check me-3 d-flex align-items-center gap-2">
+              <div>
+                <input
+
+                  type="radio"
+                  name="partnerActivation"
+                  id="partnerActivated"
+                  value="activated"
+                />
+              </div>
+              <label
+                class="fs-arabic-regular form-label mb-0"
+                for="partnerActivated"
+                >مفعل</label
+              >
+            </div>
+            <div class="form-check d-flex align-items-center gap-2">
+              <input
+
+                type="radio"
+                name="partnerActivation"
+                id="partnerNonActivated"
+                value="nonActivate"
+              />
+              <label
+                class="fs-arabic-regular form-label mb-0"
+                for="partnerNonActivated"
+                >معطل</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <label class="fs-arabic-regular form-label mb-0">إخفاء العرض </label>
+          <div class="d-flex align-items-center mt-1 gap-3">
+            <div class="form-check me-3 d-flex align-items-center gap-2">
+              <div>
+                <input
+
+                  type="radio"
+                  name="partnerActivation"
+                  id="activateHideOffer"
+                  value="activated"
+                />
+              </div>
+              <label
+                class="fs-arabic-regular form-label mb-0"
+                for="activateHideOffer"
+                >نعم</label
+              >
+            </div>
+            <div class="form-check d-flex align-items-center gap-2">
+              <input
+
+                type="radio"
+                name="partnerActivation"
+                id="nonActivateHideOffer"
+                value="nonActivate"
+              />
+              <label
+                class="fs-arabic-regular form-label mb-0"
+                for="nonActivateHideOffer"
+                >لا</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <label class="fs-arabic-regular form-label mb-0"> عرض موسمي </label>
+          <div class="d-flex align-items-center mt-1 gap-3">
+            <div class="form-check me-3 d-flex align-items-center gap-2">
+              <div>
+                <input
+
+                  type="radio"
+                  name="partnerActivation"
+                  id="activateSeasonalOffer"
+                  value="activated"
+                />
+              </div>
+              <label
+                class="fs-arabic-regular form-label mb-0"
+                for="activateSeasonalOffer"
+                >نعم</label
+              >
+            </div>
+            <div class="form-check d-flex align-items-center gap-2">
+              <input
+
+                type="radio"
+                name="partnerActivation"
+                id="nonActivateSeasonalOffer"
+                value="nonActivate"
+              />
+              <label
+                class="fs-arabic-regular form-label mb-0"
+                for="nonActivateSeasonalOffer"
+                >لا</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <label class="fs-arabic-regular form-label mb-0"> نوع العرض </label>
+          <div class="d-flex align-items-center mt-1 gap-3">
+            <div class="form-check me-3 d-flex align-items-center gap-2">
+              <div>
+                <input
+
+                  type="radio"
+                  name="partnerActivation"
+                  id="limited"
+                  value="activated"
+                />
+              </div>
+              <label class="fs-arabic-regular form-label mb-0" for="limited"
+                >محدد المدة</label
+              >
+            </div>
+            <div class="form-check d-flex align-items-center gap-2">
+              <input
+
+                type="radio"
+                name="partnerActivation"
+                id="notLimited"
+                value="nonActivate"
+              />
+              <label class="fs-arabic-regular form-label mb-0" for="notLimited"
+                >مستمر</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-4 d-flex flex-column">
+          <label
+            for="offerSeasonalType"
+            class="fs-arabic-regular form-label mb-0"
+            >نوع العرض الموسمي
+          </label>
+          <input
+            type="text"
+            class="p-2 form-control"
+            id="offerSeasonalType"
+            placeholder="يوم التأسيس"
+          />
+        </div>
+        <div class="col-4">
+          <label
+            for="offerSeasonalType"
+            class="fs-arabic-regular form-label mb-0"
+          >
+            التذكير بالعرض قبل الانتهاء
+          </label>
+          <div class="offer-reminder">
+            <button (click)="decreaseCount($event)">
+              <img src="/icons/minus.png" alt="minus icon" />
+            </button>
+            <span class="fs-arabic-regular mt-1"
+              ><span [class.hide]="zero">0</span>{{ count }}</span
+            >
+            <button (click)="addCount($event)">
+              <img src="/icons/plus-add0ffer.svg" alt="plus icon" />
+            </button>
+          </div>
+        </div>
+        <div class="col-4 d-flex flex-column">
+          <label class="fs-arabic-regular form-label mb-0"
+            >عدد نقاط العرض
+          </label>
+          <input
+            type="text"
+            class="p-2 form-control"
+            placeholder="ضع العدد هنا "
+            id="englishDepartmentName"
+          />
+        </div>
+        <div class="col-4 d-flex flex-column">
+          <label class="fs-arabic-regular form-label mb-0"> تصنيف العرض </label>
+          <select class="p-2 form-select">
+            <option disabled selected value="">حدد التصنيف</option>
+            <option value="governmental">حكوميه</option>
+          </select>
+        </div>
+        <div class="col-4 d-flex flex-column">
+          <label for="startDate" class="fs-arabic-regular form-label mb-0">
+            تاريخ بدء العرض
+          </label>
+          <input
+            type="date"
+            class="p-2 form-control"
+            id="startDate"
+            placeholder="123246463356"
+          />
+        </div>
+        <div class="col-4 d-flex flex-column">
+          <label for="endDate" class="fs-arabic-regular form-label mb-0">
+            تاريخ انتهاء العرض</label
+          >
+          <input
+            type="date"
+            class="p-2 form-control"
+            placeholder="مجال الخدمة"
+            id="endDate"
+          />
+        </div>
+        <div class="col-12 d-flex flex-column">
+          <label
+            for="arabic-description"
+            class="fs-arabic-regular form-label mb-0"
+            >نوع العرض الموسمي
+          </label>
+          <textarea name="" id="arabic-description"> </textarea>
+        </div>
+        <div class="col-12 d-flex flex-column">
+          <label
+            for="english-description"
+            class="fs-arabic-regular form-label mb-0"
+          >
+            وصف العرض باللغة الانجليزية
+          </label>
+          <textarea name="" id="english-description"> </textarea>
+        </div>
+        <div class="col-4 d-flex flex-column align-self-end">
+          <label class="fs-arabic-regular form-label mb-0"
+            >اختيار المنطقة
+          </label>
+          <div
+            class="custom-file-upload position-relative h-full d-flex align-items-center"
+          >
+            <input type="file" id="file-upload" class="file-input form-input" />
+            <label
+              for="file-upload"
+              class="file-label d-flex justify-content-between ps-2"
+            >
+              <span class="file-text">أدخل النصوص بالضغط</span>
+              <button class="file-button">
+                <img src="icons/file.svg" alt="file-icon" />
+              </button>
+            </label>
+          </div>
+        </div>
+        <div class="col-4 d-flex flex-column">
+          <label class="fs-arabic-regular form-label mb-0"
+            >اختيار المنطقة
+          </label>
+          <select class="p-2 form-select" >
+            <option disabled selected value="">اختيار المنطقة</option>
+            <option  value="governmental">حكوميه</option>
+          </select>
+        </div>
+        <div class="col-4 d-flex flex-column">
+          <label class="fs-arabic-regular form-label mb-0"
+            >الرابط الالكتروني للشريك
+          </label>
+          <input
+            type="text"
+            class="p-2 form-control"
+            placeholder="الرابط الالكتروني للشريك "
+            id="englishDepartmentName"
+          />
+        </div>
+        <div class="col d-flex align-items-end gap-3">
+          <div class="flex-grow-1 d-flex flex-column">
+            <label class="fs-arabic-regular form-label mb-0">
+              طريقة الاستفادة من العرض
+            </label>
+            <select class="p-2 form-select">
+              <option disabled selected value="">حدد الطريقة</option>
+              <option value="governmental">حكوميه</option>
+            </select>
+          </div>
+          <button class="fs-arabic-regular type-btn">
+            تخصيص العرض حسب الفئة
+          </button>
+        </div>
+      </div>
+
+      <div [class.hide] = ""  id="benefit" class="row align-items-center form-container gx-0">
+        <div class="benefit-container d-flex py-3">
+          <div class="benefit-element d-flex align-items-center gap-3">
+            <input type="checkbox" />
+            <label class="fs-arabic-regular form-label mb-0">اسم الشريك </label>
+          </div>
+          <div class="benefit-element">
+            <input
+              type="text"
+              class="ps-2 form-control"
+              placeholder="مجال الخدمة"
+              id="englishDepartmentName"
+            />
+          </div>
+          <div class="benefit-element">
+            <input
+              type="text"
+              class="ps-2 form-control"
+              placeholder="مجال الخدمة"
+              id="englishDepartmentName"
+            />
+          </div>
+          <div class="benefit-element">
+            <input
+              type="text"
+              class="ps-2 form-control"
+              placeholder="مجال الخدمة"
+              id="englishDepartmentName"
+            />
+          </div>
+        </div>
+        <div class="benefit-container d-flex py-3">
+          <div class="benefit-element d-flex align-items-center gap-3">
+            <input type="checkbox" />
+            <label class="fs-arabic-regular form-label mb-0">اسم الشريك </label>
+          </div>
+          <div class="benefit-element">
+            <input
+              type="text"
+              class="ps-2 form-control"
+              placeholder="مجال الخدمة"
+              id="englishDepartmentName"
+            />
+          </div>
+          <div class="benefit-element">
+            <input
+              type="text"
+              class="ps-2 form-control"
+              placeholder="مجال الخدمة"
+              id="englishDepartmentName"
+            />
+          </div>
+          <div class="benefit-element">
+            <input
+              type="text"
+              class="ps-2 form-control"
+              placeholder="مجال الخدمة"
+              id="englishDepartmentName"
+            />
+          </div>
+        </div>
+        <div class="benefit-container d-flex py-3">
+          <div class="benefit-element d-flex align-items-center gap-3">
+            <input type="checkbox" />
+            <label class="fs-arabic-regular form-label mb-0">اسم الشريك </label>
+          </div>
+          <div class="benefit-element">
+            <input
+              type="text"
+              class="ps-2 form-control"
+              placeholder="مجال الخدمة"
+              id="englishDepartmentName"
+            />
+          </div>
+          <div class="benefit-element">
+            <input
+              type="text"
+              class="ps-2 form-control"
+              placeholder="مجال الخدمة"
+              id="englishDepartmentName"
+            />
+          </div>
+          <div class="benefit-element">
+            <input
+              type="text"
+              class="ps-2 form-control"
+              placeholder="مجال الخدمة"
+              id="englishDepartmentName"
+            />
+          </div>
+        </div>
+        <div class="benefit-container d-flex py-3">
+          <div class="benefit-element d-flex align-items-center gap-3">
+            <input type="checkbox" />
+            <label class="fs-arabic-regular form-label mb-0">اسم الشريك </label>
+          </div>
+          <div class="benefit-element">
+            <input
+              type="text"
+              class="ps-2 form-control"
+              placeholder="مجال الخدمة"
+              id="englishDepartmentName"
+            />
+          </div>
+          <div class="benefit-element">
+            <input
+              type="text"
+              class="ps-2 form-control"
+              placeholder="مجال الخدمة"
+              id="englishDepartmentName"
+            />
+          </div>
+          <div class="benefit-element">
+            <input
+              type="text"
+              class="ps-2 form-control"
+              placeholder="مجال الخدمة"
+              id="englishDepartmentName"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="d-flex justify-content-between align-items-center submit-container"
+      >
+        <div class="d-flex align-items-center gap-2">
+          <button class="btn check-btn fs-arabic-regular">معاينة</button>
+          <button class="btn add-btn fs-arabic-regular">اضافة عرض اخر</button>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <button class="btn cancel-btn fs-arabic-regular">الغاء</button>
+          <button class="btn save-btn btn-success fs-arabic-regular">
+            حفظ
+          </button>
+        </div>
+      </div>
+    </section>
+  </form>
+</main>

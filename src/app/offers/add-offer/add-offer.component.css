@@ -1,0 +1,45 @@
+.submit-container {
+  padding: 0 17px;
+}
+.submit-container button.check-btn {
+  width: 80px;
+}
+.submit-container button.add-btn {
+  width: 134px;
+}
+.submit-container button.check-btn,
+.submit-container button.add-btn {
+  color: #29504d;
+  border: 1px solid #29504d;
+  background-color: transparent;
+}
+.submit-container {
+  margin: 30px 0;
+}
+
+.form-container .offer-reminder button:first-child {
+  background-color: #e5e5e5;
+}
+#benefit {
+  margin-top: 33px;
+  padding: 0 17px;
+  background: #fbfbfb 0% 0% no-repeat padding-box;
+}
+.benefit-container {
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px dashed #E9EBEC ;
+}
+.benefit-container .benefit-element {
+  width: 22%;
+}
+.benefit-container:last-child  {
+  border-bottom: none;
+}
+
+.benefit-container .benefit-element:nth-child(2),
+.benefit-container .benefit-element:nth-child(6),
+.benefit-container .benefit-element:nth-child(10),
+.benefit-container .benefit-element:nth-child(14) {
+  width: 33%;
+}

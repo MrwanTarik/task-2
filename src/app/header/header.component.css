@@ -72,7 +72,7 @@ header .user {
   cursor: pointer;
 }
 header .user img {
-  width: 32px;
+  object-fit: cover;
   height: 32px;
 }
 header .user .user-info h3 {

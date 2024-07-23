@@ -11,6 +11,7 @@ import { RouterLink } from '@angular/router';
 })
 export class OffersManagementComponent {
   tempIndex: number | null = null;
+  filter: boolean = true;
   show: boolean = false;
   offers = [
     {
@@ -78,5 +79,14 @@ export class OffersManagementComponent {
       this.offers.splice(this.tempIndex, 1);
       this.hideDeleteModal();
     }
+  }
+  // show filter
+  showFilter(): void {
+    this.filter = false;
+  }
+  // hide filter
+  hideFilter(event: Event) {
+    event.preventDefault();
+    this.filter = true;
   }
 }
