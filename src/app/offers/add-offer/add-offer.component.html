@@ -59,7 +59,6 @@
             <div class="form-check me-3 d-flex align-items-center gap-2">
               <div>
                 <input
-
                   type="radio"
                   name="partnerActivation"
                   id="partnerActivated"
@@ -74,7 +73,6 @@
             </div>
             <div class="form-check d-flex align-items-center gap-2">
               <input
-
                 type="radio"
                 name="partnerActivation"
                 id="partnerNonActivated"
@@ -94,7 +92,6 @@
             <div class="form-check me-3 d-flex align-items-center gap-2">
               <div>
                 <input
-
                   type="radio"
                   name="partnerActivation"
                   id="activateHideOffer"
@@ -109,7 +106,6 @@
             </div>
             <div class="form-check d-flex align-items-center gap-2">
               <input
-
                 type="radio"
                 name="partnerActivation"
                 id="nonActivateHideOffer"
@@ -129,7 +125,6 @@
             <div class="form-check me-3 d-flex align-items-center gap-2">
               <div>
                 <input
-
                   type="radio"
                   name="partnerActivation"
                   id="activateSeasonalOffer"
@@ -144,7 +139,6 @@
             </div>
             <div class="form-check d-flex align-items-center gap-2">
               <input
-
                 type="radio"
                 name="partnerActivation"
                 id="nonActivateSeasonalOffer"
@@ -164,7 +158,6 @@
             <div class="form-check me-3 d-flex align-items-center gap-2">
               <div>
                 <input
-
                   type="radio"
                   name="partnerActivation"
                   id="limited"
@@ -177,7 +170,6 @@
             </div>
             <div class="form-check d-flex align-items-center gap-2">
               <input
-
                 type="radio"
                 name="partnerActivation"
                 id="notLimited"
@@ -301,9 +293,9 @@
           <label class="fs-arabic-regular form-label mb-0"
             >اختيار المنطقة
           </label>
-          <select class="p-2 form-select" >
+          <select class="p-2 form-select" (change)="onSelectChange()">
             <option disabled selected value="">اختيار المنطقة</option>
-            <option  value="governmental">حكوميه</option>
+            <option value="governmental">حكوميه</option>
           </select>
         </div>
         <div class="col-4 d-flex flex-column">
@@ -333,7 +325,11 @@
         </div>
       </div>
 
-      <div [class.hide] = ""  id="benefit" class="row align-items-center form-container gx-0">
+      <div
+        *ngIf="benefit"
+        id="benefit"
+        class="row align-items-center form-container gx-0"
+      >
         <div class="benefit-container d-flex py-3">
           <div class="benefit-element d-flex align-items-center gap-3">
             <input type="checkbox" />
